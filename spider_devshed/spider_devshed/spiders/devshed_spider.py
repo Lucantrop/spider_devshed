@@ -1,6 +1,6 @@
 import scrapy
 
-from spider_one.items import DevShedItem
+from spider_devshed.items import DevShedItem
 
 class DevShedSpider(scrapy.Spider):
     name = "devshed"
