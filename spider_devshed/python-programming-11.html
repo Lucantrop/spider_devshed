@@ -1,0 +1,4668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" id="vbulletin_html">
+<head>
+<base href="http://forums.devshed.com/" /><!--[if IE]></base><![endif]-->
+  <link rel="canonical" href="http://forums.devshed.com/python-programming-11/" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="http://forums.devshed.com" />
+
+<meta name="generator" content="vBulletin 4.2.0" />
+
+  <link rel="Shortcut Icon" href="http://forums.devshed.com/favicon.ico" type="image/x-icon" />
+
+<meta name="viewport" content="width=device-width">
+
+    <meta name="keywords" content="Python,Programming,Python Programming, php, apache, mysql, jserv,  python, roxen, zend, zope, ftp, java, postgresql, linux, bsd, freebsd, windows xp, windows, windows 2000, hosting, servers, server, visual basic, visualbasic, c#, .net, asp, perl, xml, wap, wml, database, databases, c++, servlet, sevlets, flash, html, javascript, emcascript, css, security, mail, pop, smtp, dns, jsp" />
+    <meta name="description" content="Python Programming - Python Programming forum discussing coding techniques, tips and tricks, and Zope related information. Python was designed from the" />
+
+
+
+
+
+  
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js"></script>
+  
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-290307-1']);
+_gaq.push(['_setDomainName', '.devshed.com']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<script type="text/javascript">
+<!--
+  if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+  {
+    document.write('<script type="text/javascript" src="http://forums.devshed.com/clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=420"><\/script>');
+    document.write('<script type="text/javascript" src="http://forums.devshed.com/clientscript/yui/connection/connection-min.js?v=420"><\/script>');
+    var yuipath = 'clientscript/yui';
+    var yuicombopath = '';
+    var remoteyui = false;
+  }
+  else  // Load Rest of YUI remotely (where possible)
+  {
+    var yuipath = 'http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build';
+    var yuicombopath = '';
+    var remoteyui = true;
+    if (!yuicombopath)
+    {
+      document.write('<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js"><\/script>');
+    }
+  }
+  var SESSIONURL = "";
+  var SECURITYTOKEN = "guest";
+  var IMGDIR_MISC = "images/misc";
+  var IMGDIR_BUTTON = "images/buttons";
+  var vb_disable_ajax = parseInt("0", 10);
+  var SIMPLEVERSION = "420";
+  var BBURL = "http://forums.devshed.com";
+  var LOGGEDIN = 0 > 0 ? true : false;
+  var THIS_SCRIPT = "forumdisplay";
+  var RELPATH = "forumdisplay.php?f=11";
+  var PATHS = {
+    forum : "",
+    cms   : "",
+    blog  : ""
+  };
+  var AJAXBASEURL = "http://forums.devshed.com/";
+// -->
+</script>
+<script type="text/javascript" src="http://forums.devshed.com/clientscript/vbulletin-core.js?v=420"></script>
+
+
+
+  <link rel="alternate" type="application/rss+xml" title="Dev Shed Forums RSS Feed" href="http://forums.devshed.com/external.php?type=RSS2" />
+  
+    <link rel="alternate" type="application/rss+xml" title="Dev Shed Forums - Python Programming - RSS Feed" href="http://forums.devshed.com/external.php?type=RSS2&amp;forumids=11" />
+  
+
+
+
+  <link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/main-rollup.css?d=1438624800" />
+        
+
+  <!--[if lt IE 8]>
+  <link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/popupmenu-ie.css?d=1438624800" />
+	<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/vbulletin-ie.css?d=1438624800" />
+	<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/vbulletin-chrome-ie.css?d=1438624800" />
+	<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/vbulletin-formcontrols-ie.css?d=1438624800" />
+	<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/editor-ie.css?d=1438624800" />
+  <![endif]-->
+<style type="text/css"> 
+.affiliates img {
+    display: inline-block;
+    margin: 2.5em 1em 0;
+    max-width: 11em;
+    vertical-align: middle;
+    width: 11em;
+}
+.affiliates img.square-logo {
+    display: inline-block;
+    margin: 2.5em 1em 0;
+    max-width: 7em;
+    vertical-align: middle;
+    width: 7em;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/dbtech_vbshout.css" />
+<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/dbtech_vbshout_colours.css" />
+
+<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/dbtech_vbshout_editor.css" />
+
+<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script type="text/javascript" src="http://forums.devshed.com/dbtech/vbshout/clientscript/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="http://forums.devshed.com/dbtech/vbshout/clientscript/vbshout.js?v=610"></script>
+
+				<script type="text/javascript">
+					<!--
+					if (window.opener) { window.opener.vB_Editor['dbtech_vbshout_editor1'] = {}; window.opener.vB_Editor['dbtech_vbshout_editor1'].init_smilies = function(smilie_container) { vBShout_initSmilies(smilie_container, 1); }; };if (window.opener) { window.opener.vB_Editor['dbtech_vbshout_editor2'] = {}; window.opener.vB_Editor['dbtech_vbshout_editor2'].init_smilies = function(smilie_container) { vBShout_initSmilies(smilie_container, 2); }; };
+					// -->
+				</script>
+			
+  <title>Python Programming</title>
+  
+  <script type="text/javascript" src="http://forums.devshed.com/clientscript/vbulletin_read_marker.js?v=420"></script>
+  
+  
+    <link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/forumdisplay-rollup.css?d=1438624800" />
+  
+
+  <!--[if lt IE 8]>
+  <script type="text/javascript" src="http://forums.devshed.com/clientscript/vbulletin-threadlist-ie.js?v=420"></script>
+    <link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/toolsmenu-ie.css?d=1438624800" />
+	<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/forumbits-ie.css?d=1438624800" />
+	<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/forumdisplay-ie.css?d=1438624800" />
+	<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/threadlist-ie.css?d=1438624800" />
+	<link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/options-ie.css?d=1438624800" />
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/additional.css?d=1438624800" />
+
+<link rel='stylesheet' id='flipcss-css'  href='http://forums.devshed.com/clientscript/vbulletin_css/style00010l/js/flippant.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script type="text/javascript" src="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/js/modernizr.min.js"></script>
+<meta property="og:image" content="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/images/facebook-og.png" />
+
+<!--[if lt IE 9]>
+<script type='text/javascript' src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<link href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/js/icons.fallback.css" rel="stylesheet">
+<script type='text/javascript' src="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/js/respond.min.js"></script>
+<![endif]-->
+<noscript><link href="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/js/icons.fallback.css" rel="stylesheet"></noscript>
+</head>
+
+<body>
+
+<div id="header" class="site-header">
+    <div class="grid">
+      <div class="col-quarter clear logo-nav-block">
+        <h1 class="site-title text-center"><a class="icon-site-title" href="http://forums.devshed.com" title="Dev Shed Forums" rel="home"><span class="screen-reader-text">Dev Shed Forums</span></a></h1>
+        <span class="dropdown icon-sprite disabled-hide"><button class="nav-button"><span class="screen-reader-text">Navigation</span></button></span>
+        
+        <nav id="site-navigation" class="navigation-main text-center" role="navigation">
+          <div class="menu-main-navigation-container">
+            <ul id="menu-main-navigation" class="menu">
+              <li><a href="http://forums.devshed.com">Forums</a></li>
+              <li><a rel="nofollow" href="http://seotools.devshed.com/">Tools</a></li>
+              <li><a href="http://www.devshed.com/newsletter-signup/">Newsletter Signup</a></li>
+              <li><a href="http://www.devshed.com/articles/">Articles</a></li>
+              
+              <li><a rel="help" href="http://www.developershed.com/esupport/" target="_blank">Help</a></li>
+            </ul>
+          </div>   
+        </nav><!-- #site-navigation -->
+      </div>
+        
+      <div id="network" class="col-quarter text-center header-items network-block mobile-hidden">
+        <button id="flipnetwork" class="header-items network-button"><span class="icon-sprite network disabled-hide"></span>Devshed Network</button>
+          <ul class='ds-network enabled-hide'>
+            <li class='ds-developer-shed icon-ds-network'><a href='http://www.developershed.com' rel='follow'>Developer Shed</a>
+            <li class='ds-aspfree icon-ds-network'><a href='http://www.aspfree.com' rel='follow'>ASP Free</a></li>
+            <li class='ds-devshed icon-ds-network'><a href='http://www.devshed.com' rel='follow'>Dev Shed</a></li>
+            <li class='ds-devarticles icon-ds-network'><a href='http://www.devarticles.com' rel='follow'>Dev Articles</a></li>
+            <li class='ds-devhardware icon-ds-network'><a href='http://www.devhardware.com' rel='follow'>Dev Hardware</a></li>
+            <li class='ds-tutorialized icon-ds-network'><a href='http://www.tutorialized.com' rel='follow'>Tutorialized</a></li>
+            <li class='ds-seochat icon-ds-network'><a href='http://www.seochat.com' rel='follow'>SEO Chat</a></li>
+            <li class='ds-scripts icon-ds-network'><a href='http://www.scripts.com' rel='follow'>Scripts</a></li>
+            <li class='ds-codewalkers icon-ds-network'><a href='http://www.codewalkers.com' rel='follow'>Codewalkers</a></li>
+            <li class='ds-webhosters icon-ds-network'><a rel='nofollow' href='http://webhosting.devshed.com' rel='follow'>Web Hosters</a></li>
+            <li class='ds-devmechanic icon-ds-network'><a rel='nofollow' href='http://tools.devshed.com' rel='follow'>Dev Mechanic</a></li>
+            <li class='ds-creatsite icon-ds-network'><a rel='nofollow' href='http://www.cre8asiteforums.com/forums/' rel='follow'>Cre8asite Forums</a></li>
+          </ul>
+      </div>
+      <div class="col-half social-login-block">
+        <div id="login" class="col-half clearfix">
+          <div class="text-right">
+            
+              <button id="fliplogin" class="header-items login-button disabled-hide">login</button>
+            
+            
+            <form role="search" method="get" class="search-form header-search" id="nav_search" action="http://forums.devshed.com/search.php?do=process">
+              <label>
+                <span class="screen-reader-text">Search</span>
+                <input type="hidden" name="securitytoken" value="1384872872-fa186821ed093ad27e04e4272aefeb62fff70868" />
+                <input type="hidden" name="do" value="process" />
+
+                <input type="search" class="search-field" placeholder="Search..." name="query" tabindex="99" />
+              </label>
+              <input type="submit" class="search-submit icon-sprite search-icon" value="">
+            </form>
+
+          </div>
+          
+          <div class="enabled-hide login-fallback">
+            <form id='navbar_loginform' class='login_form shed-form' action='http://forums.devshed.com/login.php?do=login' method='post' onsubmit='md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)'>
+              <fieldset id='logindetails' class='logindetails'>
+                <label><span>Username</span>
+                <input type='text' class='input' name='vb_login_username' id='navbar_username' accesskey='u' tabindex='101' placeholder='Tim Berners-Lee' />
+                </label>
+                <label><span>Password</span>
+                <input placeholder='Something Secure' type='password' class='input' tabindex='102' name='vb_login_password' id='navbar_password'  />
+                </label>
+                <input type='text' class='textbox default-value' tabindex='102' name='vb_login_password_hint' id='navbar_password_hint' value='Password' style='display:none;' />
+                <input type='submit' class='button-primary' tabindex='104' value='Log in' title='Enter your username and password in the boxes provided to login, or click the register button to create a profile for yourself.' accesskey='s' />
+              </fieldset>
+              <div id='remember' class='remember'>
+                <ul class='login-meta'>
+                  <li><label><input type='checkbox' name='cookieuser' value='1' id='cb_cookieuser_navbar' class='cb_cookieuser_navbar input checkbox' accesskey='c' tabindex='103'> Remember Me?</label></li>
+                  <li><a class='action-link' rel='nofollow' href='http://forums.devshed.com/register.php' rel='nofollow'>Register</a></li>
+                  <li><a rel='nofollow' class='action-link' href='http://forums.devshed.com/login.php?do=lostpw'>Lost Password?</a></li>
+                </ul>
+              </div>
+              <input type='hidden' name='s' />
+              <input type='hidden' name='securitytoken' value='guest' />
+              <input type='hidden' name='do' value='login' />
+              <input type='hidden' name='vb_login_md5password' />
+              <input type='hidden' name='vb_login_md5password_utf' />
+            </form>
+           </div>
+          
+        </div>
+      <div class="col-half desktop-text-left mobile-hidden">
+      <ul class="social-links header-items">
+        <li class="icon-sprite facebook"><a rel="nofollow" href="https://www.facebook.com/DevShed" target="_blank"><span class="screen-reader-text">facebook</span></a></li>
+        <li class="icon-sprite google"><a rel="nofollow" href="https://plus.google.com/117600848231262463007" target="_blank"><span class="screen-reader-text">google</span></a></li>
+        <li class="icon-sprite twitter"><a rel="nofollow" href="https://twitter.com/Dev_Shed" target="_blank"><span class="screen-reader-text">twitter</span></a></li>
+        <li class="icon-sprite rss"><a href="/external.php" target="_blank"><span class="screen-reader-text">rss</span></a></li>
+      </ul>
+      </div>
+    </div><!-- .grid -->
+
+    <div class="ad_global_header">
+      
+      
+    </div>
+ </div>
+</div><!-- end .site-header -->
+ 
+
+<div class="header-below">
+ 
+  <div class="grid">
+    <div class="col-quarter push-quarter text-center mobile-hidden">
+      <a rel="nofollow" class="header-below-action accent-type" href="http://tools.seochat.com/">Free Web Developer Tools</a>
+    </div>
+   <div class="col-half desktop-text-right">
+      <div class="col-half">
+        <a class="header-below-action accent-type" href="http://forums.devshed.com/search.php" accesskey="4">Advanced Search</a>
+      </div>
+    </div>
+  </div><!-- end grid -->
+
+</div><!-- end header-below -->
+
+
+
+
+<div class="body_wrapper site-content">
+<div class="bread-crumb">
+  <div class="grid">
+    <ul class="tight-list">
+      <li class="navbithome"><a href="http://forums.devshed.com/index.php" accesskey="1">&#xf015;</a></li>
+        
+	<li class="navbit"><a href="http://forums.devshed.com/">Forum</a></li>
+
+	<li class="navbit"><a href="http://forums.devshed.com/programming-languages-41/">Programming Languages</a></li>
+
+        
+	<li class="navbit lastnavbit"><span>Python Programming</span></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="grid">
+  <div class="col-half">
+    <h3 class="forums">Forum: <span class="forumtitle">Python Programming</span></h3>
+    <p>Python Programming forum discussing coding techniques, tips and tricks, and Zope related information. Python was designed from the ground up to be a completely object-oriented programming language.</p>
+  </div>
+  <div class="col-half margin-top">
+  
+  
+</div>
+</div>
+
+<div id="above_threadlist" class="grid">
+  <div class="col-quarter">
+    
+  </div>
+  <div class="col-three-quarter">  
+    
+    <span id="threadpagestats" class="demi-italic-title">Threads 1 to 30 of 8906</span>
+      <span class="threadpagenav shed-form">
+        <form action="http://forums.devshed.com/forumdisplay.php?f=11&amp;page=101" method="get" class="pagination popupmenu nohovermenu shed-form">
+<input type="hidden" name="f" value="11" />
+  
+    <span><a href="javascript://" class="popupctrl">Page 1 of 297</a></span>
+    
+    
+    
+    <span class="selected"><a href="javascript://" title="Results 1 to 30 of 8,906">1</a></span><span><a href="http://forums.devshed.com/python-programming-11/2.html" title="Show results 31 to 60 of 8,906">2</a></span><span><a href="http://forums.devshed.com/python-programming-11/3.html" title="Show results 61 to 90 of 8,906">3</a></span><span><a href="http://forums.devshed.com/python-programming-11/11.html" title="Show results 301 to 330 of 8,906"><!--+10-->11</a></span><span><a href="http://forums.devshed.com/python-programming-11/51.html" title="Show results 1,501 to 1,530 of 8,906"><!--+50-->51</a></span><span><a href="http://forums.devshed.com/python-programming-11/101.html" title="Show results 3,001 to 3,030 of 8,906"><!--+100-->101</a></span>
+    
+    <span class="separator">...</span>
+    
+    
+    <span class="prev_next"><a rel="next" href="http://forums.devshed.com/python-programming-11/2.html" title="Next Page - Results 31 to 60 of 8,906"><i class="fontawesome">&#xf105;</i></a></span>
+    
+    
+    <span class="first_last"><a href="http://forums.devshed.com/python-programming-11/297.html" title="Last Page - Results 8,881 to 8,906 of 8,906">Last <i class="fontawesome">&#xf101;</i></a></span>
+    
+  
+  <ul class="popupbody popuphover">
+    <li class="jumptopage"><b>Jump to page: <input type="text" name="page" size="4" /></b> <input type="submit" value="Go" /></li>
+  </ul>
+</form>
+      </span>
+    
+  </div>
+</div>
+
+  
+  
+  <div id="above_threadlist_controls" class="grid">
+  <div class="quick-nav clear">
+   <ul class="popupgroup forumdisplaypopups col-half push-quarter" id="forumdisplaypopups">
+      <li class="popupmenu nohovermenu" id="forumtools">
+        <h6><a href="javascript://" class="popupctrl" rel="nofollow">Forum Tools</a></h6>
+        <ul class="popupbody popuphover">
+          
+            <li>
+              <a href="http://forums.devshed.com/python-programming-11/?do=markread&amp;markreadhash=guest" rel="nofollow" onclick="return mark_forum_and_threads_read(11);">
+                Mark This Forum Read
+              </a>
+            </li>
+            
+          <li><a href="http://forums.devshed.com/programming-languages-41/" rel="nofollow">View Parent Forum</a></li>
+        </ul>
+      </li>
+      
+      <li class="popupmenu nohovermenu" id="forumsearch">
+        <h6><a href="javascript://" class="popupctrl">Search Forum</a></h6>
+        <form action="http://forums.devshed.com/search.php?do=process" class="shed-form" method="get">
+        <ul class="popupbody popuphover forum-search">
+          <li>
+            <input type="text" name="q" value="Search..." />
+            <input type="submit" value="Search" />
+          </li>
+          <li class="formsubmit" id="popupsearch">
+            <div>
+              <label><input type="radio" name="showposts" value="0" checked="checked" /> Show Threads</label>
+              <label><input type="radio" name="showposts" value="1" /> Show Posts</label>
+            </div>
+            <div><a href="http://forums.devshed.com/search.php?search_type=1&amp;contenttype=vBForum_Post&amp;forumchoice[]=11" rel="nofollow">Advanced Search</a></div>
+
+          </li>
+        </ul>
+        <input type="hidden" name="s" value="" />
+        <input type="hidden" name="securitytoken" value="guest" />
+        <input type="hidden" name="do" value="process" />
+        <input type="hidden" name="contenttype" value="vBForum_Post" />
+        <input type="hidden" name="forumchoice[]" value="11" />
+        <input type="hidden" name="childforums" value="1" />
+        <input type="hidden" name="exactname" value="1" />
+        </form>
+      </li>
+      
+
+
+
+    </ul>
+      
+    </div><!-- end quick-nav -->
+  </div>
+  
+
+
+
+
+  <div class="grid">
+    <h3 class="clear">
+      <div class="forumtitle col-half forums">Sub-Forums</div>
+      <div class="forumthreadpost col-quarter forums mobile-hidden">Threads / Posts&nbsp;</div>
+      <div class="forumlastpost col-quarter forums mobile-hidden">Last Post</div>
+    </h3>
+  </div>
+  <ol class="childforum">
+    <li id="forum171" class="forumbit_post old_lock L1">
+
+<div class="forumbit_post L2 grid">
+  <div class="forum-module clear">
+    <div class="col-half">
+          <div class="titleline">
+            <h2 class="demi-title"><a class="forums" href="http://forums.devshed.com/python-programming-faqs-171/">Python Programming FAQs</a>  </h2>
+          </div>
+          
+          
+          
+    </div>
+    <div class="col-quarter tcol-third mobile-margin-top">
+     <h4 class="desktop-hidden demi-title forums">Forum Statistics:</h4>
+      <ul class="tight-list">
+        <li><span class="demi-title">Threads:</span> 0</li>
+        <li><span class="demi-title">Posts:</span> 0</li>
+      </ul>
+      
+      
+      <h4 class="desktop-hidden demi-title forums">Forum Actions:</h4>
+      <div class="clear">
+      <ul class="forumactionlinks tight-list">
+      
+      </ul>
+      </div>
+      </div> <!-- end subscribe links and stats -->
+     
+    <div class="col-quarter tcol-two-third mobile-margin-top">
+      <h4 class="desktop-hidden demi-title forums">Last Post:</h4>
+      Never
+    </div>
+    
+  </div>
+  
+</div>
+</li>
+  </ol>
+
+
+
+
+
+<div id="threadlist" class="threadlist">
+  <form id="thread_inlinemod_form" action="http://forums.devshed.com/inlinemod.php?forumid=11" method="post">
+    <h2 class="hidden">Threads in This Forum</h2>
+
+    <div>
+
+        <div class="grid">
+          <h3 class="clear">
+            <div class="col-half mobile-hidden">
+              <a class="forums" href="http://forums.devshed.com/python-programming-11/?sort=title&amp;order=asc" rel="nofollow">Title</a> /
+              <a class="forums" href="http://forums.devshed.com/python-programming-11/?sort=postusername&amp;order=asc" rel="nofollow">Thread Starter</a>
+            </div>
+          
+             <div class="col-quarter mobile-hidden"> 
+              <a class="forums" href="http://forums.devshed.com/python-programming-11/?sort=replycount&amp;order=desc" rel="nofollow">Replies</a> / <a class="forums" href="http://forums.devshed.com/python-programming-11/?sort=views&amp;order=desc" rel="nofollow">Views</a>
+             </div>
+             <div class="col-quarter mobile-hidden">
+              <a class="forums" href="http://forums.devshed.com/python-programming-11/?sort=lastpost&amp;order=asc" rel="nofollow">Last Post By<span class="fontawesome display-sort-arrow">&#xf0dc;</span></a>
+             </div>
+            
+            
+          </h3>
+       </div>
+
+
+      
+        <ol id="stickies" class="stickies clear tight-list-left">
+          
+<li class="grid threadbit hot" id="thread_209432">
+  <div class="forum-module clear rating0 sticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+            <img src="http://forums.devshed.com/images/misc/sticky.gif" alt="Sticky Thread" />
+          
+                                        
+          
+            <span id="thread_prefix_209432" class="prefix understate">
+              
+              Sticky: 
+              
+              
+            </span>
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/py2exe-step-step-guide-209432.html" id="thread_title_209432" title="People seem to have lots of problems with py2exe, I hope this helps: 
+py2exe guide  
+ 
+As this is fresh out off the press there maybe  bugs - so any comments are appreciated. 
+ 
+grim;)">PY2EXE step-by-step guide</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/grim-archon" class="username understate" title="Started by Grim Archon on December 9th, 2004 04:26 AM">Grim Archon</a>,&nbsp;December 9th, 2004&nbsp;04:26 AM</span>
+            
+            
+            
+              <dl class="pagination" id="pagination_threadbit_209432">
+                <dt class="label">3 Pages <span class="separator">&bull;</span></dt>
+                <dd>
+                   <span><a href="http://forums.devshed.com/python-programming-11/py2exe-step-step-guide-209432.html">1</a></span> <span><a href="http://forums.devshed.com/python-programming-11/py2exe-step-step-guide-209432-2.html">2</a></span> <span><a href="http://forums.devshed.com/python-programming-11/py2exe-step-step-guide-209432-3.html">3</a></span>
+                  
+                </dd>
+              </dl>
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=209432" onclick="who(209432); return false;">42</a></li>
+                <li><span class="demi-title">Views</span>: 80,825</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/markroberts" title="markroberts is offline"><strong>markroberts</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/markroberts" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=594053&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>June 5th, 2015, <span class="time">09:12 AM</span>
+          <a href="http://forums.devshed.com/python-programming/209432-py2exe-step-step-guide-post2957334.html#post2957334" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_359384">
+  <div class="forum-module clear rating5 sticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+            <img src="http://forums.devshed.com/images/misc/sticky.gif" alt="Sticky Thread" />
+          
+                                        
+          
+            <span id="thread_prefix_359384" class="prefix understate">
+              
+              Sticky: 
+              
+              
+            </span>
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/python-language-resources-359384.html" id="thread_title_359384" title="Here is a list of resources for the Python programming language (hopefully, the mods will be willing to make this list a sticky). Feel free to add any you think would be useful. 
+ 
+General Information 
+Python Language Home Page 
+The Python Programming Language (Guido van Rossum's own page!) 
+ActiveState Python 
+Wikipedia - Python Programming Language 
+Dev Shed - Python Help 
+Python Resources 
+The...">Python Language Resources</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/schol-r-lea" class="username understate" title="Started by Schol-R-LEA on June 11th, 2006 04:22 PM">Schol-R-LEA</a>,&nbsp;June 11th, 2006&nbsp;04:22 PM</span>
+            
+            
+            
+              <dl class="pagination" id="pagination_threadbit_359384">
+                <dt class="label">2 Pages <span class="separator">&bull;</span></dt>
+                <dd>
+                   <span><a href="http://forums.devshed.com/python-programming-11/python-language-resources-359384.html">1</a></span> <span><a href="http://forums.devshed.com/python-programming-11/python-language-resources-359384-2.html">2</a></span>
+                  
+                </dd>
+              </dl>
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=359384" onclick="who(359384); return false;">15</a></li>
+                <li><span class="demi-title">Views</span>: 41,655</li>
+              
+              <li class="hidden">Rating5 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/systango" title="systango is offline"><strong>systango</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/systango" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=572993&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>September 26th, 2014, <span class="time">07:59 AM</span>
+          <a href="http://forums.devshed.com/python-programming/359384-python-language-resources-post2943756.html#post2943756" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_109293">
+  <div class="forum-module clear rating5 sticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+            <img src="http://images.devshed.com/fds/icons/icon3.gif" alt="Lightbulb" border="0" />
+          
+
+          
+            <img src="http://forums.devshed.com/images/misc/sticky.gif" alt="Sticky Thread" />
+          
+                                        
+          
+            <span id="thread_prefix_109293" class="prefix understate">
+              
+              Sticky: 
+              
+              
+            </span>
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/tips-tricks-inspiration-etc-109293.html" id="thread_title_109293" title="I had an idea to make a thread where people can post tips, tricks, thing to inspire or motivate people, links, etc.  
+ 
+Hopefully this thread will be able to help any Pythoner. Whether it be a complete beginner or a very advanced expert. 
+ 
+Tips: An example would be stuff that will help improve someone's programming. Such as: &quot;Instead of using all of these functions, you can easily accomplish the...">Tips, tricks, inspiration, etc</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/masterchief" class="username understate" title="Started by MasterChief on December 31st, 2003 12:42 PM">MasterChief</a>,&nbsp;December 31st, 2003&nbsp;12:42 PM</span>
+            
+            
+            
+              <dl class="pagination" id="pagination_threadbit_109293">
+                <dt class="label">4 Pages <span class="separator">&bull;</span></dt>
+                <dd>
+                   <span><a href="http://forums.devshed.com/python-programming-11/tips-tricks-inspiration-etc-109293.html">1</a></span> <span><a href="http://forums.devshed.com/python-programming-11/tips-tricks-inspiration-etc-109293-2.html">2</a></span> <span><a href="http://forums.devshed.com/python-programming-11/tips-tricks-inspiration-etc-109293-3.html">3</a></span> <span><a href="http://forums.devshed.com/python-programming-11/tips-tricks-inspiration-etc-109293-4.html">4</a></span>
+                  
+                </dd>
+              </dl>
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=109293" onclick="who(109293); return false;">55</a></li>
+                <li><span class="demi-title">Views</span>: 64,022</li>
+              
+              <li class="hidden">Rating5 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/mherrmann" title="mherrmann is offline"><strong>mherrmann</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/mherrmann" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=485475&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>December 16th, 2013, <span class="time">05:01 AM</span>
+          <a href="http://forums.devshed.com/python-programming/109293-tips-tricks-inspiration-etc-post2917075.html#post2917075" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_131489">
+  <div class="forum-module clear rating0 sticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+            <img src="http://forums.devshed.com/images/misc/sticky.gif" alt="Sticky Thread" />
+          
+                                        
+          
+            <span id="thread_prefix_131489" class="prefix understate">
+              
+              Sticky: 
+              
+              
+            </span>
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/help-131489.html" id="thread_title_131489" title="Here are some ideas for getting help fast: 
+ 
+Search the forums for key words (e.g. cgi, thread, py2exe, Tkinter). Maybe the question was asked before. 
+Make the Title describe the problem.  
+If you post code - use the code block # button on the form to preserve the layout. Indentation is critical. Experiment with the preview button! 
+If the code is big (more than a screen) then attach it as a...">Asking For Help?</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/grim-archon" class="username understate" title="Started by Grim Archon on March 17th, 2004 05:53 AM">Grim Archon</a>,&nbsp;March 17th, 2004&nbsp;05:53 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=131489" onclick="who(131489); return false;">13</a></li>
+                <li><span class="demi-title">Views</span>: 28,262</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/yhmmc" title="yhmmc is offline"><strong>yhmmc</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/yhmmc" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=471213&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>November 19th, 2013, <span class="time">07:20 AM</span>
+          <a href="http://forums.devshed.com/python-programming/131489-help-post2913147.html#post2913147" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+        </ol>
+      
+      
+        <ol id="threads" class="threads clear tight-list-left">
+          
+<li class="grid threadbit " id="thread_971728">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/paramiko-ssh-cd-971728.html" id="thread_title_971728" title="Hi all, 
+This is the first time I have tried ssh from a python script so I have no experience with it. 
+I am using the paramiko module  with python 2.7.6 but I am having trouble with this: 
+ 
+    ssh.exec_command(&quot;cd public_html&quot;) 
+ 
+which doesn't seem to work as following it with: 
+   ssh.exec_command(&quot;ls -l&quot;) 
+ 
+shows the same list as before the change.">paramiko ssh and cd</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/barrowman" class="username understate" title="Started by Barrowman on Today 05:03 AM">Barrowman</a>,&nbsp;Today&nbsp;05:03 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971728" onclick="who(971728); return false;">1</a></li>
+                <li><span class="demi-title">Views</span>: 29</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>Today, <span class="time">07:39 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971728-paramiko-ssh-cd-post2962475.html#post2962475" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971624">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/help-image-processing-971624.html" id="thread_title_971624" title="Hi All, 
+ 
+I am Mohan Rao. I needed a help in image processing using opencv in 
+python. I have a small code taken from internet, which will take the frames 
+of a video. I am not able to understand the concept of that. Is there any link 
+where I can get the doc related to this? Can anyone please give me some 
+idea how to extract the frames and send the images to a list? I am posting the 
+sample...">Needed help in image processing</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/mudradi-mohan" class="username understate" title="Started by mudradi.mohan on October 17th, 2015 12:49 AM">mudradi.mohan</a>,&nbsp;October 17th, 2015&nbsp;12:49 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971624" onclick="who(971624); return false;">5</a></li>
+                <li><span class="demi-title">Views</span>: 358</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/mudradi-mohan" title="mudradi.mohan is offline"><strong>mudradi.mohan</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/mudradi-mohan" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=462437&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>Today, <span class="time">12:04 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971624-help-image-processing-post2962459.html#post2962459" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971669">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/insert-multiple-data-sql-database-json-format-971669.html" id="thread_title_971669" title="Hi, 
+How to insert multiple addresses in to sql database field as a JSON format.There is a syntax error in the below code. 
+Exception Value:(_mysql_exceptions.ProgrammingError) (1064, 'You have an error in your SQL syntax;) 
+ 
+origin = 'address one' 
+desti = 'address two' 
+js_data = tbl_users(**{'name' : 'hhhhh','mobile':'66666','address_origin':{'address':{origin,destination}})...">insert multiple data in to sql database as a JSON format</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/ramesh03" class="username understate" title="Started by ramesh03 on October 20th, 2015 12:36 AM">ramesh03</a>,&nbsp;October 20th, 2015&nbsp;12:36 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971669" onclick="who(971669); return false;">6</a></li>
+                <li><span class="demi-title">Views</span>: 261</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/ramesh03" title="ramesh03 is offline"><strong>ramesh03</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/ramesh03" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=351895&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>October 21st, 2015, <span class="time">05:37 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971669-insert-multiple-data-sql-database-json-format-post2962383.html#post2962383" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit " id="thread_971670">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/video-data-anaysis-971670.html" id="thread_title_971670" title="Hi Gurus, 
+I need some help ,I want to analyze video data ,is there any library to achieve it  .As per my knowledge using tagger python library to extract the metadata of MP3 files .Any help or suggestions would be  
+great .My goal is to analyze the movies in which area/locations  watched the movies (laptop/mobile/ipad  etc ..) 
+ 
+Thanks , 
+mohan">Video data anaysis</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/mohanpothula" class="username understate" title="Started by mohanpothula on October 20th, 2015 02:03 AM">mohanpothula</a>,&nbsp;October 20th, 2015&nbsp;02:03 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971670" onclick="who(971670); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 181</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/mohanpothula" title="mohanpothula is offline"><strong>mohanpothula</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/mohanpothula" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=617284&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>October 20th, 2015, <span class="time">08:04 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971670-video-data-anaysis-post2962348.html#post2962348" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971633">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/wmi-library-windows-10-a-971633.html" id="thread_title_971633" title="I've been trying to create this python-based tool that sends system information (particularly temperatures) to a serial-based LCD screen.  Doing this in Linux was very easily a success, however, doing this in Windows seems to be a complete nightmare - Windows 10, to be specific. 
+ 
+I heard the most effective solution was to use the WMI library.  However, there are a few problems with that: 
+1. ...">WMI Library and Windows 10</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/schmidtbag" class="username understate" title="Started by schmidtbag on October 17th, 2015 03:17 PM">schmidtbag</a>,&nbsp;October 17th, 2015&nbsp;03:17 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971633" onclick="who(971633); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 283</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/schmidtbag" title="schmidtbag is offline"><strong>schmidtbag</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/schmidtbag" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=639731&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>October 18th, 2015, <span class="time">01:44 PM</span>
+          <a href="http://forums.devshed.com/python-programming/971633-wmi-library-windows-10-a-post2962287.html#post2962287" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971565">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+            <img src="http://images.devshed.com/fds/icons/icon1.gif" alt="Post" border="0" />
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/result-set-help-971565.html" id="thread_title_971565" title="Hi all, 
+ 
+My first post and i am new to Python. 
+ 
+I have code that connects to an Oracle database and fetchs some results from a sql based query, the returned results get displayed as: 
+ 
+DM_SAC_DEST=211076;;;DM_SAC_LOST=202170;;;DM_SAC_MCS_IND=201468;;;DM_BSM_BTM=201205;;; 
+ 
+The above gets stored into a variable called queryResult.">Result set help!</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/sebonzakuraa" class="username understate" title="Started by sebonzakuraa on October 12th, 2015 10:11 AM">sebonzakuraa</a>,&nbsp;October 12th, 2015&nbsp;10:11 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971565" onclick="who(971565); return false;">4</a></li>
+                <li><span class="demi-title">Views</span>: 416</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/dwblas" title="dwblas is offline"><strong>dwblas</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/dwblas" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=269692&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>October 13th, 2015, <span class="time">11:58 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971565-result-set-help-post2962131.html#post2962131" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit " id="thread_971552">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/loss-fft-code-properly-971552.html" id="thread_title_971552" title="I am trying to do a simple FFT analysis, but for some reason I cannot get it to work right. The example function I wish to analyze is f(x) = -5.75 sin (2*pi*(t-1000)/7.258)). Here is my code: 
+ 
+import numpy as np 
+import matplotlib.pyplot as plt 
+import scipy.fftpack as fft 
+ 
+t_step = 0.1 
+t_start = 1000; t_max = 1200; n = int(t_max/t_step); m = t_max - t_start 
+n_start =...">At a loss of why my FFT code will not work properly.</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/toll_booth" class="username understate" title="Started by toll_booth on October 11th, 2015 02:37 PM">toll_booth</a>,&nbsp;October 11th, 2015&nbsp;02:37 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                  <i class="tag-list forums fontawesome" title="fft"><span class="screen-reader-text">Tag List</span></i>
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971552" onclick="who(971552); return false;">3</a></li>
+                <li><span class="demi-title">Views</span>: 216</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>October 11th, 2015, <span class="time">07:15 PM</span>
+          <a href="http://forums.devshed.com/python-programming/971552-loss-fft-code-properly-post2962078.html#post2962078" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971480">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+            <img src="http://images.devshed.com/fds/icons/icon14.gif" alt="Thumbs up" border="0" />
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/merging-identical-fields-csv-971480.html" id="thread_title_971480" title="Hi there 
+I have been struggling with a problem 
+I have a CSV file which contains order information. 
+ 
+23793,2015-10-03,1,KD24042,&quot;Magnetic Robot&quot;,&quot;Person 1&quot;,&quot;99 Mily Court&quot;,Yalloon,Queensland,4306,Australia,07877,dauuu.maoooan@ail.com 
+23792,2015-10-03,1,WT250,&quot;Magnetic Alphabet&quot;,&quot;Bennett&quot;,&quot;89 Aldkkk Close&quot;,karro,&quot;New South Wales&quot;,2322,Australia,0408888,kandkkkk@ya.com.au...">Merging identical fields from a CSV</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/newpyjamas" class="username understate" title="Started by NewPyjamas on October 6th, 2015 10:47 AM">NewPyjamas</a>,&nbsp;October 6th, 2015&nbsp;10:47 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971480" onclick="who(971480); return false;">6</a></li>
+                <li><span class="demi-title">Views</span>: 514</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>October 7th, 2015, <span class="time">12:30 PM</span>
+          <a href="http://forums.devshed.com/python-programming/971480-merging-identical-fields-csv-post2961963.html#post2961963" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971445">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/help-recursive-maze-solver-971445.html" id="thread_title_971445" title="Hey everyone, i have an assignment where i need to build a recursive maze solver. essentially your will need a class that creates a maze class with your common get and set functions and normal stuff in the initializer. We need the actual maze solver in a seperate file. the maze is in a text file and we are supposed to have the program prompt the user for it etc then read the values and print an...">help with recursive maze solver</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/bz3535" class="username understate" title="Started by bz3535 on October 3rd, 2015 03:27 PM">bz3535</a>,&nbsp;October 3rd, 2015&nbsp;03:27 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971445" onclick="who(971445); return false;">6</a></li>
+                <li><span class="demi-title">Views</span>: 601</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>October 5th, 2015, <span class="time">10:41 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971445-help-recursive-maze-solver-post2961858.html#post2961858" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971053">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/method-call-function-python-code-971053.html" id="thread_title_971053" title="I have some C code which has some basic functions. I want to be able to call these C functions from my python code. There seem to be a lot f methods to do this as I search online, but they look a bit complicated. Can anyone suggest which is the simplest and best method to call C functions from python without any issues ?">Best method to call a C function from python code</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/bobdxcool" class="username understate" title="Started by bobdxcool on September 9th, 2015 03:50 PM">bobdxcool</a>,&nbsp;September 9th, 2015&nbsp;03:50 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971053" onclick="who(971053); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 384</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/scorpions4ever" title="Scorpions4ever is offline"><strong>Scorpions4ever</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/scorpions4ever" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=13055&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>September 29th, 2015, <span class="time">04:27 PM</span>
+          <a href="http://forums.devshed.com/python-programming/971053-method-call-function-python-code-post2961684.html#post2961684" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971366">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/copy-data-webpage-record-csv-file-971366.html" id="thread_title_971366" title="Dear all, 
+ 
+I am looking code for extracting data from webpage &amp; copy into CSV file. with next sheet  
+Here is website PHOTON Info 
+it gives out database value for various solar panel . i would like to append the sheet with newly loaded type section value">Copy data from webpage &amp; record it csv file</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/ajit-nayak87" class="username understate" title="Started by ajit.nayak87 on September 28th, 2015 04:18 AM">ajit.nayak87</a>,&nbsp;September 28th, 2015&nbsp;04:18 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                  <i class="tag-list forums fontawesome" title="csv, excel, python, webquery"><span class="screen-reader-text">Tag List</span></i>
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971366" onclick="who(971366); return false;">1</a></li>
+                <li><span class="demi-title">Views</span>: 293</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>September 28th, 2015, <span class="time">08:13 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971366-copy-data-webpage-record-csv-file-post2961610.html#post2961610" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971289">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/authenticate-silverpop-request-jsessionid-971289.html" id="thread_title_971289" title="Hi all, 
+ 
+I have a requirement where I am required to login in silverpop api (http://api3.silverpop.com/XMLAPI) with my userid and password to request for a jsessionid. 
+ 
+When I get the jsessionid, I use it to submit report request to silverpop which is transferred to the ftp server. 
+ 
+Has someone done this using python implementation? 
+ 
+Can someone share insights how they did the...">How to authenticate silverpop to request for a jsessionid</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/ron256" class="username understate" title="Started by Ron256 on September 23rd, 2015 08:45 AM">Ron256</a>,&nbsp;September 23rd, 2015&nbsp;08:45 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971289" onclick="who(971289); return false;">0</a></li>
+                <li><span class="demi-title">Views</span>: 258</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/ron256" title="Ron256 is offline"><strong>Ron256</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/ron256" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=576713&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>September 23rd, 2015, <span class="time">08:45 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971289-authenticate-silverpop-request-jsessionid-post2961423.html#post2961423" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971121">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/process-sending-messages-gui-971121.html" id="thread_title_971121" title="I had my previous thread on a similar topic: 
+Thread not starting independently of the GUI 
+ 
+After refining my search, this is what I have found: 
+python - pygtk and multiprocessing - Constantly update textview from another process running infinite loop - Stack Overflow 
+ 
+After looking through it and then updating the code at hand, this is what I have: 
+import pygtk 
+pygtk.require(&quot;2.0&quot;)...">Process not sending messages to GUI</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/elephantcoder" class="username understate" title="Started by elephantcoder on September 13th, 2015 04:42 PM">elephantcoder</a>,&nbsp;September 13th, 2015&nbsp;04:42 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971121" onclick="who(971121); return false;">3</a></li>
+                <li><span class="demi-title">Views</span>: 401</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>September 14th, 2015, <span class="time">10:36 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971121-process-sending-messages-gui-post2961068.html#post2961068" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971107">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/django-windows-10-a-971107.html" id="thread_title_971107" title="Hi 
+ 
+I am trying to run dJango on windows 10 using python 
+ 
+Below are steps i performed 
+ 
+1. Installed pyth 2.7.10rc1 version 
+2.Installed django 1.8 using tar file 
+3.Added PATH variables in system properties">dJango windows 10</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/punati" class="username understate" title="Started by punati on September 12th, 2015 04:11 PM">punati</a>,&nbsp;September 12th, 2015&nbsp;04:11 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971107" onclick="who(971107); return false;">1</a></li>
+                <li><span class="demi-title">Views</span>: 337</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>September 13th, 2015, <span class="time">08:30 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971107-django-windows-10-a-post2961025.html#post2961025" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_971055">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/thread-starting-independently-gui-971055.html" id="thread_title_971055" title="Hi all, 
+ 
+This is my problem.  I have a small script that creates a GUI.  However, when the GUI is created, a thread is supposed to be kicked off when it displays.  This is not working as intended: 
+ 
+import gtk 
+import pygtk 
+ 
+import os 
+import time 
+import optparse">Thread not starting independently of the GUI</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/elephantcoder" class="username understate" title="Started by elephantcoder on September 9th, 2015 04:28 PM">elephantcoder</a>,&nbsp;September 9th, 2015&nbsp;04:28 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=971055" onclick="who(971055); return false;">6</a></li>
+                <li><span class="demi-title">Views</span>: 609</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/elephantcoder" title="elephantcoder is offline"><strong>elephantcoder</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/elephantcoder" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=578169&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>September 11th, 2015, <span class="time">10:09 AM</span>
+          <a href="http://forums.devshed.com/python-programming/971055-thread-starting-independently-gui-post2960933.html#post2960933" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970998">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/xml-validation-970998.html" id="thread_title_970998" title="Hi Gurus , 
+I have bunch of xml's like this format ,I want to loop each file and check for activation model(highlighted with bold)  and identify the count of model. Any idea how to do that using python script 
+ 
+&lt;activations&gt; 
+	  &lt;activation timestamp=&quot;1383286340&quot; type=&quot;phone&quot;&gt; 
+	    &lt;account-number&gt;33483&lt;/account-number&gt; 
+	    &lt;device-id&gt;fdb30050-b660-495d-8e40-e1316e30fe8b&lt;/device-id&gt; 
+	   ...">xml validation</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/mohanpothula" class="username understate" title="Started by mohanpothula on September 5th, 2015 08:41 AM">mohanpothula</a>,&nbsp;September 5th, 2015&nbsp;08:41 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970998" onclick="who(970998); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 493</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/mohanpothula" title="mohanpothula is offline"><strong>mohanpothula</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/mohanpothula" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=617284&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>September 6th, 2015, <span class="time">09:02 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970998-xml-validation-post2960735.html#post2960735" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970950">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/python-pywebuml-package-error-970950.html" id="thread_title_970950" title="I am trying to retrive the structure of a python source code via the package pywebuml. once installed with all the packages required. From the project directory i used the command line 'pywebuml web'and  tried to get the class diagram in the GUI but i find the following error.  
+what is the problem and how can i solve it? 
+ 
+********************************** 
+This is the Copy/Paste friendly...">python pywebuml package error</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/pydina" class="username understate" title="Started by pydina on September 1st, 2015 09:22 PM">pydina</a>,&nbsp;September 1st, 2015&nbsp;09:22 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970950" onclick="who(970950); return false;">1</a></li>
+                <li><span class="demi-title">Views</span>: 412</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>September 2nd, 2015, <span class="time">08:43 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970950-python-pywebuml-package-error-post2960654.html#post2960654" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970887">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/create-tui-form-scratch-970887.html" id="thread_title_970887" title="I am doing a project in my raspberry pi, and I want to use python. I have very little room left, so installing other libraries does not work, so I want to create my own library for a TUI, So I can create what I ned when I need(without a bunch of extra stuff I will never use). I tried urwid on my mac,and I cannot even figure ou thow it works. My thinking goes upon the lines that it either A,...">How do I create a tui(form scratch)</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/grimofdoom" class="username understate" title="Started by grimofdoom on August 26th, 2015 01:31 PM">grimofdoom</a>,&nbsp;August 26th, 2015&nbsp;01:31 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970887" onclick="who(970887); return false;">7</a></li>
+                <li><span class="demi-title">Views</span>: 908</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 28th, 2015, <span class="time">08:23 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970887-create-tui-form-scratch-post2960530.html#post2960530" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970796">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/validating-data-970796.html" id="thread_title_970796" title="Hi Guru's 
+I want to process the data which is inconsistent phone number format .I have written this code but it giving error.Any help will be greate 
+ 
+test.data 
+Alice    (314) 555-1212 
+Bob      212.555.9753 
+Carlos   405-555-3912 
+David    (202) 555.8471 
+ 
+test.py">Validating  data</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/mohanpothula" class="username understate" title="Started by mohanpothula on August 19th, 2015 09:30 AM">mohanpothula</a>,&nbsp;August 19th, 2015&nbsp;09:30 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970796" onclick="who(970796); return false;">7</a></li>
+                <li><span class="demi-title">Views</span>: 646</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/mrbaseball34" title="MrBaseball34 is offline"><strong>MrBaseball34</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/mrbaseball34" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=15697&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 26th, 2015, <span class="time">10:09 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970796-validating-data-post2960469.html#post2960469" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970857">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/selected-item-glade-combobox-970857.html" id="thread_title_970857" title="I get this error: 
+ 
+TypeError: Cannot create a consistent method resolution 
+order (MRO) for bases GInterface, CellLayout, CellEditable 
+** 
+ERROR:gobject/pygobject.c:963:pygobject_new_full: assertion failed: (tp != NULL) 
+ 
+ 
+Code is:">Get selected item from Glade combobox</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/primuspaul" class="username understate" title="Started by primuspaul on August 24th, 2015 10:19 PM">primuspaul</a>,&nbsp;August 24th, 2015&nbsp;10:19 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970857" onclick="who(970857); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 358</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/primuspaul" title="primuspaul is offline"><strong>primuspaul</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/primuspaul" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=634036&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 26th, 2015, <span class="time">12:18 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970857-selected-item-glade-combobox-post2960450.html#post2960450" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970851">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/typeerror-coercing-unicode-string-buffer-nonetype-found-970851.html" id="thread_title_970851" title="Hi 
+Got this error.  
+I try to parse a CSV type format and they are in unicode. 
+the file looks like this in print() 
+u'firstName': u'Eric', u'lastName': u'Doors', u'address2': None, u'zipCode': u'48377', u'taxRegion': None, u'county': None, u'state': u'Michigan', u'address1': u'27923 River Rd #20', u'country': u'United States' 
+ 
+ 
+ 
+ 
+        self.CustomerNameBox.setText(self.CustomerName)">TypeError: coercing to Unicode: need string or buffer, NoneType found</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/bbmak" class="username understate" title="Started by bbmak on August 24th, 2015 12:16 PM">bbmak</a>,&nbsp;August 24th, 2015&nbsp;12:16 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970851" onclick="who(970851); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 426</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/bbmak" title="bbmak is offline"><strong>bbmak</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/bbmak" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=158684&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 25th, 2015, <span class="time">11:34 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970851-typeerror-coercing-unicode-string-buffer-nonetype-found-post2960434.html#post2960434" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_969141">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/looking-elegant-solution-prime-function-969141.html" id="thread_title_969141" title="I wrote a function that detects whether or not an argument passed to it is a prime number or not. 
+I'm wondering if there's a more elegant solution. 
+ 
+def is_prime(x): 
+	if x == 0: 
+		print &quot;is not prime&quot; 
+		return False 
+	if x == 1: 
+		print &quot;is not prime&quot; 
+		return False">Looking for a more elegant solution to a prime number function.</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/thomasstutman" class="username understate" title="Started by ThomasStutman on May 12th, 2015 11:53 AM">ThomasStutman</a>,&nbsp;May 12th, 2015&nbsp;11:53 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=969141" onclick="who(969141); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 603</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/ksalasas" title="ksalasas is offline"><strong>ksalasas</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/ksalasas" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=634027&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 23rd, 2015, <span class="time">01:33 PM</span>
+          <a href="http://forums.devshed.com/python-programming/969141-looking-elegant-solution-prime-function-post2960358.html#post2960358" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970830">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/writing-text-textbox-created-glade-970830.html" id="thread_title_970830" title="How do I script in python to make the contents of a textbox equal a certain string? The textbox is in a GUI (.glade) file made in Glade 3.">Writing text to a textbox created in glade?</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/primuspaul" class="username understate" title="Started by primuspaul on August 23rd, 2015 12:21 AM">primuspaul</a>,&nbsp;August 23rd, 2015&nbsp;12:21 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970830" onclick="who(970830); return false;">0</a></li>
+                <li><span class="demi-title">Views</span>: 559</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/primuspaul" title="primuspaul is offline"><strong>primuspaul</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/primuspaul" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=634036&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 23rd, 2015, <span class="time">12:21 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970830-writing-text-textbox-created-glade-post2960342.html#post2960342" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970828">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/python-3-4-gtk-3-a-970828.html" id="thread_title_970828" title="I am a beginner in Python programming and I wanted to test out creating a python GUI in Glade and launching it through a Python script made in gedit. However, I always get an error at the import gtk line. I know python works because a test app (command line) and even some non-GTK GUI apps worked. I know I set the PATH options right in Windows 7 because gtk3-demo does work.">Python 3.4 and GTK 3+</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/primuspaul" class="username understate" title="Started by primuspaul on August 22nd, 2015 08:13 PM">primuspaul</a>,&nbsp;August 22nd, 2015&nbsp;08:13 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970828" onclick="who(970828); return false;">3</a></li>
+                <li><span class="demi-title">Views</span>: 429</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/primuspaul" title="primuspaul is offline"><strong>primuspaul</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/primuspaul" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=634036&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 22nd, 2015, <span class="time">09:39 PM</span>
+          <a href="http://forums.devshed.com/python-programming/970828-python-3-4-gtk-3-a-post2960339.html#post2960339" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970817">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/valueerror-values-unpack-970817.html" id="thread_title_970817" title="Hi 
+I am parsing the csv file using python, however, i got this error.:chomp: 
+ValueError: too many values to unpack 
+ 
+CSV File 
+ 
+&quot;invoices&quot; :  
+ 
+python code.">ValueError: too many values to unpack</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/bbmak" class="username understate" title="Started by bbmak on August 21st, 2015 01:42 AM">bbmak</a>,&nbsp;August 21st, 2015&nbsp;01:42 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970817" onclick="who(970817); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 512</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/bbmak" title="bbmak is offline"><strong>bbmak</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/bbmak" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=158684&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 21st, 2015, <span class="time">12:37 PM</span>
+          <a href="http://forums.devshed.com/python-programming/970817-valueerror-values-unpack-post2960318.html#post2960318" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970231">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+            <img src="http://images.devshed.com/fds/icons/icon2.gif" alt="Arrow" border="0" />
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/python-mechanize-browser-facebook-login-cookies-script-970231.html" id="thread_title_970231" title="Will someone please give me some feedback on this login script : 
+ 
+I am trying to write a script that will login to Facebook, not anything malicious, just to replicate the login process in python. 
+The script I have put together should work, but... it does not. 
+ 
+I attribute this to my lask of knowledge of the cookie jar and mechanize tools. 
+I have been getting the majority of my knowledge...">Python Mechanize Browser Facebook Login Cookies Script</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/tfoss1986" class="username understate" title="Started by tfoss1986 on July 11th, 2015 07:24 PM">tfoss1986</a>,&nbsp;July 11th, 2015&nbsp;07:24 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970231" onclick="who(970231); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 8,845</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/ramusus" title="ramusus is offline"><strong>ramusus</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/ramusus" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=177306&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 17th, 2015, <span class="time">10:46 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970231-python-mechanize-browser-facebook-login-cookies-script-post2960175.html#post2960175" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970667">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/gui-library-python-multiplatform-webinterface-970667.html" id="thread_title_970667" title="Hi,  
+ 
+I built a new gui library. Here is the github link https://github.com/dddomodossola/gui. 
+Main features:  
+ 
+ multiplatform 
+ fully Python coded 
+ light weight, about 100kb of source code 
+ remotely accessible by built-in webserver 
+ no external dependencies">GUI library for Python, multiplatform webinterface</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/dddomodossola" class="username understate" title="Started by dddomodossola on August 9th, 2015 07:04 AM">dddomodossola</a>,&nbsp;August 9th, 2015&nbsp;07:04 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970667" onclick="who(970667); return false;">0</a></li>
+                <li><span class="demi-title">Views</span>: 476</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/dddomodossola" title="dddomodossola is offline"><strong>dddomodossola</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/dddomodossola" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=631941&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 9th, 2015, <span class="time">07:04 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970667-gui-library-python-multiplatform-webinterface-post2959962.html#post2959962" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970603">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+            <img src="http://images.devshed.com/fds/icons/icon4.gif" alt="Exclamation" border="0" />
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/finding-integrals-3d-software-via-python-970603.html" id="thread_title_970603" title="Hi, 
+ 
+First of all I should note that I have no programming &amp; math background, I'm a graphic designer, 
+I'm trying to adapt some formulas like cornus-euler spline into Cinema 4D Software. As Cinema 4D uses Python as a scripting language I decided to find a solution in Python. 
+ 
+I have asked it in several forum sites and now I have C++ solution (Need to convert it to Python) It is basically...">Finding Integrals for a 3D Software via Python</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/grasycho" class="username understate" title="Started by grasycho on August 5th, 2015 03:10 AM">grasycho</a>,&nbsp;August 5th, 2015&nbsp;03:10 AM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970603" onclick="who(970603); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 398</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>August 5th, 2015, <span class="time">09:42 PM</span>
+          <a href="http://forums.devshed.com/python-programming/970603-finding-integrals-3d-software-via-python-post2959850.html#post2959850" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970425">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/language-swallowing-python-970425.html" id="thread_title_970425" title="Found this in the news, and I know we have some active Python posters so I thought it might be of interest! 
+ 
+The full article: In data science, the R language is swallowing Python | InfoWorld">&quot;The R Language is Swallowing Python&quot;</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/markroberts" class="username understate" title="Started by markroberts on July 24th, 2015 12:36 PM">markroberts</a>,&nbsp;July 24th, 2015&nbsp;12:36 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970425" onclick="who(970425); return false;">6</a></li>
+                <li><span class="demi-title">Views</span>: 991</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/b49p23tivg" title="b49P23TIvg is offline"><strong>b49P23TIvg</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/b49p23tivg" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=411524&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    <li>
+      <a rel="nofollow" href="http://www.linkedin.com/in/lambertdw" class="home-page-icon">
+        Visit Homepage
+      </a>
+    </li>
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>July 31st, 2015, <span class="time">06:55 AM</span>
+          <a href="http://forums.devshed.com/python-programming/970425-language-swallowing-python-post2959631.html#post2959631" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+<li class="grid threadbit hot" id="thread_970457">
+  <div class="forum-module clear rating0 nonsticky-thread">
+    <div class="col-half tcol-half">
+      <!-- title / author block -->
+        <a class="threadstatus fontawesome col-single tcol-quarter" rel="vB::AJAX" title=""><span class="status-icon"></span></a>
+        
+        <div class="col-seven-eighth tcol-three-quarter">
+         <h3 class="forums demi-title">
+          <!--  status icon block -->
+            
+
+            
+
+          
+
+          
+                                        
+          
+          <a class="forums title" href="http://forums.devshed.com/python-programming-11/thresholds-numpy-scipy-970457.html" id="thread_title_970457" title="I want to use Numpy/Scipy to help me find the number of times on an 1-D array that cross a given threshold in an ascending direction. It's an easy problem with Python arrays: Given 1-D array X and threshold value c, the script would look like this: 
+ 
+crossings =  
+for i in range(1, len(X)): 
+    if X &lt; c and X &gt;= c: 
+        crossings.append(i) 
+     
+Note that since all I really need for my...">&quot;Thresholds&quot; in numpy/scipy</a>
+        </h3>
+
+        <div class="threadmeta">        
+          <div class="author">
+                        
+            
+              <span class="label">Started by&nbsp;<a href="http://forums.devshed.com/author/toll_booth" class="username understate" title="Started by toll_booth on July 27th, 2015 05:34 PM">toll_booth</a>,&nbsp;July 27th, 2015&nbsp;05:34 PM</span>
+            
+            
+            
+            <!-- iconinfo -->
+            <div class="threaddetails">
+              <div class="threaddetailicons">
+                
+                  <i class="tag-list forums fontawesome" title="numpy, scipy"><span class="screen-reader-text">Tag List</span></i>
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+
+    </div>
+    <div class="col-half tcol-half">
+      <!-- threadstats -->
+        
+          <div class="col-half"> 
+            <ul class="tight-list" title="">
+              
+                <li><span class="demi-title">Replies</span>: <a rel="nofollow" href="http://forums.devshed.com/misc.php?do=whoposted&amp;t=970457" onclick="who(970457); return false;">2</a></li>
+                <li><span class="demi-title">Views</span>: 507</li>
+              
+              <li class="hidden">Rating0 / 5</li>
+            </ul>
+          </div>
+        
+      <div class="col-half">
+        <!-- lastpost -->
+        <dl class="tight-list col-seven-eighth">
+        
+          <dt class="lastpostby hidden">Last Post By</dt>
+          <dd><div class="popupmenu memberaction">
+  <a class="username offline popupctrl" href="http://forums.devshed.com/author/toll_booth" title="toll_booth is offline"><strong>toll_booth</strong></a>
+  <ul class="popupbody popuphover memberaction_body">
+    <li>
+      <a href="http://forums.devshed.com/author/toll_booth" class="profile-icon">
+        View Profile
+      </a>
+    </li>
+    
+    <li>
+      <a rel="nofollow" href="http://forums.devshed.com/search.php?do=finduser&amp;userid=211525&amp;contenttype=vBForum_Post&amp;showposts=1" class="forum-posts-icon">
+        View Forum Posts
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+
+    
+    
+  </ul>
+</div></dd>
+          <dd>July 27th, 2015, <span class="time">08:10 PM</span>
+          <a href="http://forums.devshed.com/python-programming/970457-thresholds-numpy-scipy-post2959502.html#post2959502" class="lastpostdate fontawesome" title="Go to last post">&#xf0a9;</a>
+          </dd>
+        
+        </dl>
+
+        
+    </div><!-- end nested columns for thread listings -->
+    
+    
+
+   </div> <!-- end col half stats and last post -->
+    
+  </div>
+</li>
+        </ol>
+      
+    </div>
+    
+
+</div>
+
+
+
+<div id="below_threadlist" class="grid clear noinlinemod ">
+  
+  <div class="col-three-quarter shed-form mobile-margin-top ">
+     
+     <!-- inline mod form! -->
+  <div class="noinlinemod ">
+    
+    <!-- inline mod form! -->
+
+
+    <input type="hidden" name="url" value="" />
+    <input type="hidden" name="s" value="" />
+    <input type="hidden" name="securitytoken" value="guest" />
+    <input type="hidden" name="forumid" value="11" />
+  </form>
+    <div class="margin-top-medium clear">
+      <form action="http://forums.devshed.com/forumdisplay.php?f=11&amp;page=101" method="get" class="pagination popupmenu nohovermenu shed-form">
+<input type="hidden" name="f" value="11" />
+  
+    <span><a href="javascript://" class="popupctrl">Page 1 of 297</a></span>
+    
+    
+    
+    <span class="selected"><a href="javascript://" title="Results 1 to 30 of 8,906">1</a></span><span><a href="http://forums.devshed.com/python-programming-11/2.html" title="Show results 31 to 60 of 8,906">2</a></span><span><a href="http://forums.devshed.com/python-programming-11/3.html" title="Show results 61 to 90 of 8,906">3</a></span><span><a href="http://forums.devshed.com/python-programming-11/11.html" title="Show results 301 to 330 of 8,906"><!--+10-->11</a></span><span><a href="http://forums.devshed.com/python-programming-11/51.html" title="Show results 1,501 to 1,530 of 8,906"><!--+50-->51</a></span><span><a href="http://forums.devshed.com/python-programming-11/101.html" title="Show results 3,001 to 3,030 of 8,906"><!--+100-->101</a></span>
+    
+    <span class="separator">...</span>
+    
+    
+    <span class="prev_next"><a rel="next" href="http://forums.devshed.com/python-programming-11/2.html" title="Next Page - Results 31 to 60 of 8,906"><i class="fontawesome">&#xf105;</i></a></span>
+    
+    
+    <span class="first_last"><a href="http://forums.devshed.com/python-programming-11/297.html" title="Last Page - Results 8,881 to 8,906 of 8,906">Last <i class="fontawesome">&#xf101;</i></a></span>
+    
+  
+  <ul class="popupbody popuphover">
+    <li class="jumptopage"><b>Jump to page: <input type="text" name="page" size="4" /></b> <input type="submit" value="Go" /></li>
+  </ul>
+</form>
+    </div>
+
+  </div>
+
+
+  </div>
+</div>
+
+<hr class="forums-bg-light margin-top margin-bottom" />
+
+<div class="grid"> <!-- start forum info and display options -->
+<div id="forum_info_options">
+  
+  <div class="col-half">
+  <div class="collapse">
+    <h3 class="forums">Forum Information and Options   <a class="collapse fontawesome disabled-hide" id="collapse_forum_info" href="http://forums.devshed.com/python-programming-11/#top">&#xf0de;</a></h3>
+  </div>
+  <div id="forum_info" class="">
+    
+    <div id="forum_moderators" class="forum-module margin-bottom">
+      <h5>Moderators of this Forum</h5>
+      <ul class="commalist">
+        
+          <li><a class="username" href="http://forums.devshed.com/author/scorpions4ever"><b class="mod">Scorpions4ever</b></a>, </li>
+        
+          <li><a class="username" href="http://forums.devshed.com/author/winters"><b class="mod">Winters</b></a>, </li>
+        
+          <li><a class="username" href="http://forums.devshed.com/author/nilpo"><b class="mod">Nilpo</b></a>, </li>
+        
+          <li><a class="username" href="http://forums.devshed.com/author/muscle_crowe"><b class="admin">muscle_crowe</b></a>, </li>
+        
+          <li><a class="username" href="http://forums.devshed.com/author/eric-miller">eric miller</a></li>
+        
+      </ul>
+    </div>
+    
+    
+      <div id="forum_onlineusers" class="forum-module">
+        <h5>Users Browsing this Forum</h5>
+        <div>
+          <p>There are currently <a href="http://forums.devshed.com/online.php">15 users browsing this forum</a>. (0 members &amp; 15 guests)</p>
+          <ol class="commalist">
+            
+          </ol>
+        </div>
+      </div>
+    
+  </div>
+  </div> <!-- end col-half -->
+  
+
+  
+  
+  
+  <div class="col-half mobile-margin-top">
+  <div class="collapse">
+    <h3 class="forums">Thread Display Options  <a class="collapse fontawesome disabled-hide" id="collapse_forum_options" href="http://forums.devshed.com/python-programming-11/#top">&#xf0de;</a></h3>
+  </div>
+  <div id="forum_options" class="forum-module">
+    <form id="forum_display_options" class="shed-form" action="http://forums.devshed.com/forumdisplay.php" method="get">
+      <input type="hidden" name="s" value="" />
+      <input type="hidden" name="f" value="11" />
+      <input type="hidden" name="page" value="1" />
+      <input type="hidden" name="pp" value="30" />
+      <div>
+        
+        <div class="clear">
+        <div class="col-third">
+          <label class="demi-title base-color" for="sel_daysprune">Show threads from the...</label>
+          <select class="primary margin-top-short" id="sel_daysprune" name="daysprune">
+            <option value="1" >Last Day</option>
+            <option value="2" >Last 2 Days</option>
+            <option value="7" >Last Week</option>
+            <option value="10" >Last 10 Days</option>
+            <option value="14" >Last 2 Weeks</option>
+            <option value="30" >Last Month</option>
+            <option value="45" >Last 45 Days</option>
+            <option value="60" >Last 2 Months</option>
+            <option value="75" >Last 75 Days</option>
+            <option value="100" >Last 100 Days</option>
+            <option value="365" >Last Year</option>
+            <option value="-1" selected="selected">Beginning</option>
+          </select>
+          <p class="description screen-reader-text">Use this control to limit the display of threads to those newer than the specified time frame.</p>
+        </div>
+        <div class="col-third">
+          <label class="demi-title base-color" for="sel_sort">Sort threads by:</label>
+          <select class="primary margin-top-short" id="sel_sort" name="sort">
+            <option value="title" >Thread Title</option>
+            <option value="lastpost" selected="selected">Last Post Time</option>
+            <option value="dateline" >Thread Start Time</option>
+            <option value="replycount" >Number of Replies</option>
+            <option value="views" >Number of Views</option>
+            <option value="postusername" >Thread Starter</option>
+            <option value="voteavg" >Thread Rating</option>
+          </select>
+          <p class="description screen-reader-text">Allows you to choose the data by which the thread list will be sorted.</p>
+        </div>
+        
+       </div> <!-- clear end -->
+
+
+        <!-- Group of Radio Buttons -->
+        <div class="margin-top">
+          <span class="demi-title base-color">Order threads in...</span>
+          <ul class="checkradio group tight-list">
+            <li><label for="radio_asc"><input type="radio" name="order" id="radio_asc" value="asc"  /> Ascending Order</label></li>
+            <li><label for="radio_dsc"><input type="radio" name="order" id="radio_dsc" value="desc" checked="checked" /> Descending Order</label></li>
+          </ul>
+          <p class="description screen-reader-text">Note: when sorting by date, 'descending order' will show the newest results first.</p>
+        </div>
+        
+      </div>
+      <div class="options_input_wrapper">
+        <div class="options_input_block">
+          <div class="margin-top-short">
+            <input type="submit" value="Show Threads" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+ </div><!--  end col-half  -->
+  
+ </div><!-- end grid - forum info and display options -->
+  
+
+</div>
+<script type="text/javascript">
+<!--
+vbphrase['doubleclick_forum_markread'] = "Double-click this icon to mark this forum and its contents as read";
+init_forum_readmarker_system();
+//-->
+</script>
+
+<div id="footer" class="grid">
+
+  <form action="http://forums.devshed.com/forum.php" method="get" id="footer_select" class="footer_select">
+    
+      <select name="styleid" onchange="switch_id(this, 'style')">
+        <optgroup label="Quick Style Chooser"><option class="hidden"></option></optgroup>
+        
+                  
+          <option value="8" class="" >-- vB4 Default Style</option><option value="10" class="" selected="selected">-- devshed_2014</option>
+                    
+        
+        
+      </select> 
+        
+
+    
+  </form>
+
+  <ul id="footer_links" class="text-center forums demi-title">
+    <li><a rel="nofollow" href="mailto:webmaster@developershed.com" rel="nofollow" accesskey="9">Contact Us</a></li>
+    <li><a href="http://forums.devshed.com">Developer Forums</a></li>
+    
+    
+    <li><a href="http://forums.devshed.com/archive/index.php">Archive</a></li>
+    
+    
+    
+    <li><a href="http://forums.devshed.com/python-programming-11/#top" onclick="document.location.hash='top'; return false;">Top</a></li>
+  </ul>
+  
+  
+  
+  
+  <script type="text/javascript">
+  <!--
+    // Main vBulletin Javascript Initialization
+    vBulletin_init();
+  //-->
+  </script>
+        
+</div>
+
+<hr class="forums-bg-light margin-top margin-bottom" />
+
+<!-- affiliates -->
+<div class="grid affiliates">
+  <div class="col-full text-center">
+    <a href="http://www.internetmarketingninjas.com/" target="_blank" rel="nofollow"><img src="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/images/imn-logo.png" alt="IMN logo"></a>
+    <a rel="nofollow" href="http://www.majestic.com/" target="_blank" rel="nofollow"><img src="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/images/majestic-logo-new.png" alt="majestic logo"></a>
+    <a rel="nofollow" href="http://www.spyfu.com/" target="_blank"><img class="square-logo" src="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/images/spyfu-logo.png" alt="spyfu logo"></a>
+    <a rel="nofollow" href="http://www.threadwatch.org/" target="_blank" rel="nofollow"><img src="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/images/thread-watch.png" alt="threadwatch logo"></a>
+    <a rel="nofollow" href="http://seotools.devshed.com/" target="_blank"><img src="http://forums.devshed.com/clientscript/vbulletin_css/style00010l/images/devshed-tools-logo.png" alt="seochat tools logo"></a>
+  </div>
+</div>
+<!-- affiliates -->
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+  <div id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info grid">
+      <p class="col-third desktop-text-left">
+        Devshed is a <a href="http://developershed.com" target="_blank">Developer Shed Property</a>, Owned by <a href="http://www.internetmarketingninjas.com/blog/author/jim-boykin/" target="_blank">Jim Boykin</a>, CEO of <a href="http://www.internetmarketingninjas.com/" target="_blank">Internet Marketing Ninjas</a>
+      </p>
+      <p class="col-third text-center">
+        <a id="footer-logo-link" class="footer-logo" href="http://www.devshed.com"><span class="screen-reader-text">Dev Shed Forums</span></a>
+        &copy; 2003 - 2014 by Devshed, LLC. All rights reserved
+      </p>
+        <ul class="footer-nav col-third">
+          <li><a href="http://www.devshed.com/">Home</a></li>
+          <li><a href="http://forums.devshed.com">Forums</a></li>
+          <li><a href="http://www.devshed.com/articles/">Articles</a></li>
+          <li><a href="http://forums.devshed.com/badges.php">Badges</a></li>
+          <li><a href="http://www.developershed.com/privacy.php" target="_blank">Privacy Policy</a></li>
+          <li><a href="http://www.developershed.com/esupport/" target="_blank">Support</a></li>
+          <li><a href="http://www.devshed.com/sitemap/">Sitemap</a></li>
+          <li><a href="http://www.devshed.com/newsletter-signup/">Newsletter Signup</a></li>
+          <li><a rel="nofollow" href="http://seotools.devshed.com/">Free Web Developer Tools</a></li>
+        </ul>
+      </div><!-- .grid -->
+    </div><!-- .site-info -->
+  </div><!-- #colophon -->
+</div>
+ 
+
+<script type='text/javascript' src='http://forums.devshed.com/clientscript/vbulletin_css/style00010l/js/ie.bs.js'></script>
+<script type='text/javascript' src='http://forums.devshed.com/clientscript/vbulletin_css/style00010l/js/flippant.min.js'></script>
+<script type='text/javascript' src='http://forums.devshed.com/clientscript/vbulletin_css/style00010l/js/scripts.js'></script>
+</div><script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-25094208-2']); /*_gaq.push(['_trackPageview']);*/ _gaq.push(['_trackEvent', 'vBulletin', window.location.host, window.location.href]); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script>
+
+</body>
+</html>
